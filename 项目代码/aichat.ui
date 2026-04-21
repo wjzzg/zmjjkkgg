@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AiChatWidget</class>
+ <widget class="QWidget" name="AiChatWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>小智 · 智能家庭管家</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget { background-color: #f5f5f5; font-family: Microsoft YaHei; }
+QTextBrowser { border: none; background: white; border-radius: 10px; padding: 10px; font-size: 14px; }
+QTextEdit { border: 1px solid #d0d0d0; border-radius: 18px; padding: 8px 12px; font-size: 14px; background: white; }
+QPushButton { background: white; border: 1px solid #d0d0d0; border-radius: 20px; padding: 8px 16px; font-size: 14px; }
+QPushButton:hover { background: #e6e6e6; }
+#pushButton_record { background: #428bca; color: white; border: none; }
+#pushButton_record:hover { background: #3071a9; }
+#pushButton_record:pressed { background: #1d4568; }</string>
+  </property>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string>background: white; border-bottom: 1px solid #e0e0e0;</string>
+   </property>
+   <property name="text">
+    <string>小智 · 智能家庭管家</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser_chat">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>760</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_input">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>540</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>输入消息...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_send">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>320</y>
+     <width>80</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_record">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>320</y>
+     <width>120</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>按住录音</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_file">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_disconnect">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>380</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>断开云端</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
